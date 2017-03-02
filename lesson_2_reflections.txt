@@ -1,0 +1,8 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+Answer: Git init is used to start using git on a project that’s not under git yet. When you git init, you link git with certain files so you can create and communicate more efficiently and effectively with projects.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+Answer: The staging area contains the file or (logically-related) files that are ready to be committed (for tracking) to the git repository.  The working directory contains all the files -- those about to be committed and those that are not yet  ready for committing to the repository of the project.
+

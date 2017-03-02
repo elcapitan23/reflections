@@ -1,0 +1,60 @@
+When comparing two files(diffs) via CLI:
+cd to the directory, then
+diff -u file_old.js file_new.js
+…or whatever file name they are and type of files.
+
+Also, these may be helpful:
+
+cd ~                          # change directories to your home directory
+mkdir version-control         # make version-control directory
+cd version-control            # go to version-control directory
+mkdir reflections             # create reflections directory
+cd reflections                # go to reflections directory
+subl lesson_1_reflections.txt # launch sublime with file called lesson_1_reflections.txt (you can replace subl with another editor here if you prefer a different one)
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+
+Answer: When manually choosing to create a commit very automatic, sometimes you may end up having too big of a commit with barely any changes or a few similar debugging changes, and other times it may be too small of a commit where you lump too many commits, or different changes into one. However, it is great to create a commit instead of it being automatic and equally spaced out because if done wisely, you can really illustrate to someone else or yourself what you changed and why and how you changed it without much confusion.
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+Answer: Because with GIT, sometimes you have multiple files that are concurrently working together, and it is best to save or commit them all at once.
+
+Exiting git log
+To stop viewing git log output, press q (which stands for quit).
+
+Getting Colored Output
+To get colored diff output, run git config --global color.ui auto
+
+Copying and Pasting from the Command Line
+To complete this quiz, you'll want to copy and paste some commit ids.
+
+Windows
+To copy and paste within Git Bash:
+The default way to copy/paste in Git Bash is by using the menu (accessed by going to the top left) to "mark" to select what you want to copy and then use the menu again to paste.
+This gets inefficient pretty quickly, so it's a good idea to set up QuickEdit mode to make copying and pasting much faster.  To do this, go to Menu->Properties and in the Options tab select QuickEdit Mode.
+Then you can copy text by selecting it and then right clicking, and you can paste by right clicking without anything selected on the screen.
+If you're having trouble, you can find more detailed instructions about how to set up QuickEdit mode here.  Those instructions are for the Command Prompt program, but they will also work for Git Bash.
+
+Mac
+To copy and paste within the terminal on Mac, use Cmd+C and Cmd+V
+
+Ubuntu
+To copy and paste within the terminal on Ubuntu, use Ctrl+Shift+C and Ctrl+Shift+V.
+
+Using git log and git diff
+As a reminder, running git log will show a list of the recent commits with information about them, including commit IDs. Running git diff followed by two commit IDs will compare the two versions of the code in those commits. If you need a refresher, you may want to rewatch this video.
+
+Entering commit IDs
+If it is easier, you may enter the first four or more characters of the commit ID rather than pasting the entire ID.
+
+How can you use the commands git log and git diff to view the history of files?
+
+Answer:You use git log to see every commit that was made in the file. Then using git diff, you can compare the differences in changes of one commit to the other in case you need to see what your changes were each time you commit. Git diff will also illustrate what was added(green +++++) and (deleted - — minus signs) with each.
+
+Git Errors and Warnings
+Should not be doing an octopus
+Octopus is a strategy Git uses to combine many different versions of code together. This message can appear if you try to use this strategy in an inappropriate situation.
+
+You are in 'detached HEAD' state
+HEAD is what Git calls the commit you are currently on. You can “detach” the HEAD by switching to a previous commit, which we’ll see in the next video. Despite what it sounds like, it’s actually not a bad thing to detach the HEAD. Git just warns you so that you’ll realize you’re doing it.
