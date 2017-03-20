@@ -18,3 +18,7 @@ How do the diagrams help you visualize the branch structure?
 
 Answer: By drawing the diagram you can directly see the relations between commits and branches. This makes it clear where to find specific changes; and see commit parents.
 
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+Answer: The result is one branch with changes from both branches. After a merge, all commits will be shown based on the timestamp in git log. This will show the commits from the two different branches running through each other.
+
